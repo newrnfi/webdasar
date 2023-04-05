@@ -1,0 +1,13 @@
+.user {
+    color: blue;
+    font-family: 'Roboto';
+}
+
+#tabel {
+    margin-top: 28px;
+    margin-right: 8px;
+    margin-bottom: 28px;
+    margin-left: 180px;
+    background-color: aqua;
+    padding: 20px;
+}
