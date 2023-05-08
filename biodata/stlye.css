@@ -1,0 +1,23 @@
+body {
+    background: url("./images/bg.jpg") top center;
+}
+
+.kmpl {
+    background-color:#5f2ee7b3;
+    color: #000000;
+    max-width: 100%;
+    width: 800px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 1%;
+    }
+
+div a {
+    color: rgb(255, 255, 255);
+}
+
+div a:hover {
+    color: rgb(35, 191, 230);
+}
+
