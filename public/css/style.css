@@ -1,7 +1,8 @@
-/* body {
+body {
     font-family: 'Raleway', sans-serif;
-    background-image: url('/public/img/bg.jpg');
-} */
+    background-image: url('../img/bg.jpg');
+}
+
 .mask-custom {
     background: rgba(47, 89, 121, 0.2);
     border-radius: 1em;

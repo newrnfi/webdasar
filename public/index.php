@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./font/bootstrap-icons.css">
 </head>
 <body>
-    <div class="col-9 my-5 mx-auto">
+    <div class="col-9 my-5 mx-auto text-white">
     <h1>Daftar Data Diri Mahasiswa</h1>
         <div class="col align-self-end">
             <a class="btn btn-small btn-success mb-2" href="./tambah.php"><i class="bi bi-clipboard-plus"></i> Tambah</a>
@@ -23,7 +23,7 @@
                 $sql = "SELECT * FROM `data_diri`";
             ?>
             
-            <table class="table table-striped text-center">
+            <table class="table text-center text-white">
                 <thead>
                 <tr>
                     <td>NO.</td>
@@ -70,7 +70,6 @@
             </table>
         </div>
     </div>
-    
     <script src="./js/bootsrap.min.js"></script>
     <script src="./js/bootsrap.bundle.min.js"></script>
 </body>
