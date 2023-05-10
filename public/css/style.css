@@ -1,0 +1,12 @@
+/* body {
+    font-family: 'Raleway', sans-serif;
+    background-image: url('/public/img/bg.jpg');
+} */
+.mask-custom {
+    background: rgba(47, 89, 121, 0.2);
+    border-radius: 1em;
+    backdrop-filter: blur(25px);
+    border: 2px solid rgba(60, 36, 36, 0.05);
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
