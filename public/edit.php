@@ -16,9 +16,9 @@
 
 include_once("conn.php");
 
-if(isset($_POST['update'])) {   
+if(isset($_POST['update'])) {  
+     
     $id = $_POST['id'];
-    
     $nim = $_POST['nim'];
     $nama = $_POST['nama'];
     $jk = $_POST['jk'];
