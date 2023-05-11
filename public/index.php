@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Utama CRUD</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
-<body>
+<body class="text-bg-dark">
     <div class="col-9 my-5 mx-auto text-white">
     <h1>Daftar Data Diri Mahasiswa</h1>
         <div class="col align-self-end">
@@ -55,9 +55,9 @@
                     <td><?php echo $row['alamat'] ?></td>
                     <td>
                         <div class="col-8 mx-auto">
-                        <a class="btn btn-warning mb-1" href="./edit.php"><i class="bi bi-pencil-square"></i> Ubah</a>
+                        <a class="btn btn-warning mb-1" href="./edit.php?id=<?= $row['id'] ?>"><i class="bi bi-pencil-square"></i> Ubah</a>
                         <br/>
-                        <a class="btn btn-danger" href="./hapus.php"><i class="bi bi-trash"></i> Hapus</a>
+                        <a class="btn btn-danger" href="./hapus.php?id=<?= $row['id'] ?>"><i class="bi bi-trash"></i> Hapus</a>
                         </div>
                     </td>
                 </tr>
