@@ -1,13 +1,14 @@
 <?php
 
 $host = "localhost";
-$user = "root";
-$pass = "";
+$user = "newrnfi";
+$pass = "paraPika16";
 $base = "mahasiswa";
 
 
 $conn = mysqli_connect($host, $user, $pass, $base);
 
-if (mysqli_connect_errno()) {
+if (mysqli_connect_error()) {
     die("Failed To Connect");
 }
+?>

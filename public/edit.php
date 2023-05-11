@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./font/bootstrap-icons.css">
 </head>
-<body>
-    <div class="col-lg-4 col-xxl-4 my-5 mx-auto">
-    <h1 class="text-center">Edit Data Diri</h1>
+<body class="text-bg-dark">
+    <div class="col-lg-4 col-xxl-4 my-5 mx-auto mask-custom text-white">
+    <h3 class="text-center mt-2">Edit Data Diri</h3>
 
 <?php
 
@@ -50,56 +50,64 @@ while($row = mysqli_fetch_array($result)) {
 }
 ?>
 <?php if(isset($_GET['id'])): ?>
+    <div class="mt-3 ms-4 me-4 mb-2">
+        <a href="./" class="btn btn-sm btn-light" role="button">Kembali</a>
+    </div>
+    <div class="ms-4 me-4">
     <form class="row needs-validation" action="edit.php" method="post" novalidate>
-        <div class="col-md-12">
+        <div class="col-md-12 mb-2">
             <label for="validationCustom01" class="form-label">NIM</label>
             <input type="text" class="form-control" id="validationCustom01" name="nim" value="<?php echo $nim;?>" required>
             <div class="valid-feedback">
-            Looks good!
+                Looks good!
             </div>
         </div>
-        <div class="col-md-12">
-            <label for="validationCustom02" class="form-label">NAMA</label>
+        <div class="col-md-12 mb-2">
+            <label for="validationCustom02" class="form-label">Nama</label>
             <input type="text" class="form-control" id="validationCustom02" name="nama" value="<?php echo $nama;?>" required>
             <div class="valid-feedback">
-            Looks good!
+                Looks good!
             </div>
         </div>
-        <div class="col-md-12">
-            <label for="validationCustom03" class="form-label">JENIS KELAMIN</label>
-            <input type="text" class="form-control" id="validationCustom03" name="jk" value="<?php echo $jk;?>" required>
-            <div class="valid-feedback">
-            Looks good!
-            </div>
+        <div class="col-md-12 mb-2">
+            <label for="validationCustom03" class="form-label">Jenis Kelamin</label>
+            <select class="form-select" id="validationCustom03" name="jk" value="<?php echo $jk;?>" required>
+                <option selected disabled value="">Pilih</option>
+                <option value="Laki-Laki">Laki-Laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
             <div class="invalid-feedback">
-            Please select a valid gender.
+                Please select a valid gender.
             </div>
         </div>
-        <div class="col-md-12">
-            <label for="validationCustom04" class="form-label">TEMPAT LAHIR</label>
+        <div class="col-md-12 mb-2">
+            <label for="validationCustom04" class="form-label">Tempat Lahir</label>
             <input type="text" class="form-control" id="validationCustom04" name="tempat_lahir" value="<?php echo $tempat_lahir;?>" required>
             <div class="valid-feedback">
-            Looks good!
+                Looks good!
             </div>
         </div>
-        <div class="col-md-12">
-            <label for="validationCustom05" class="form-label">TANGGAL LAHIR</label>
+        <div class="col-md-12 mb-2">
+            <label for="validationCustom05" class="form-label">Tanggal Lahir</label>
             <input type="text" class="form-control" id="validationCustom05" name="tgl_lahir" value="<?php echo $tgl_lahir;?>" required>
             <div class="valid-feedback">
-            Looks good!
+                Looks good!
             </div>
         </div>
-        <div class="col-md-12">
-            <label for="validationCustom06" class="form-label">ALAMAT</label>
-            <textarea class="form-control" id="validationCustom06" name="alamat" required><?php echo $alamat;?></textarea>
+        <div class="col-md-12 mb-2">
+            <label for="validationCustom06" class="form-label">Alamat</label>
+            <textarea class="form-control" id="validationCustom06" name="alamat" required>
+                <?php echo $alamat;?>
+            </textarea>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
         </div>
-        <div>
-        <td><input type="hidden" name="id" value="<?php echo $_GET['id'];?>"></td>
-        </div>
-        <div class="mt-3">
-            <button class="btn btn-primary btn-large" type="submit" name="update" value="Update">Tambah</button>
+        <div class="mt-2">
+            <button class="btn btn-primary btn-large mb-3" type="submit" name="tambah" value="Tambah">Tambah</button>
         </div>
     </form>
+    </div>
 <?php endif; ?>
 </div>
 
